@@ -120,10 +120,6 @@ body {
   }
 
   .dice:hover {
-    box-shadow: none;
-  }
-
-  .dice:active {
     box-shadow: 0 0 30px 0 var(--neon-green);
   }
 
