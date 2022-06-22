@@ -94,15 +94,16 @@ body {
   }
 
   .card-title {
-    font-size: 10px;
+    font-size: 14px;
     padding-top: 36px;
     letter-spacing: 3px;
   }
 
   .card-quote {
-    font-size: 20px;
+    font-size: 26px;
     margin-left: 18px;
     margin-right: 18px;
+    margin-top: 12px;
   }
 
   .divider,
@@ -111,7 +112,7 @@ body {
   }
 
   .divider {
-    height: 80px;
+    height: 86px;
   }
 
   .dice {
