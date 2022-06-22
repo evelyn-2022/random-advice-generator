@@ -1,0 +1,167 @@
+:root {
+  --body-color: hsl(218, 23%, 16%);
+  --card-color: hsl(217, 19%, 24%);
+  --quote-color: hsl(193, 38%, 86%);
+  --neon-green: hsl(150, 100%, 66%);
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--body-color);
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card {
+  background-color: var(--card-color);
+  width: 600px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+}
+
+.card-title {
+  font-size: 14px;
+  padding-top: 50px;
+  text-transform: uppercase;
+  color: var(--neon-green);
+  letter-spacing: 6px;
+}
+
+.card-quote {
+  font-size: 28px;
+  color: var(--quote-color);
+  display: flex;
+  justify-content: center;
+}
+
+.quote-text {
+  text-align: center;
+}
+
+.divider {
+  width: 520px;
+  height: 90px;
+}
+
+.divider-img {
+  width: 520px;
+  object-fit: cover;
+}
+
+.dice {
+  background-color: var(--neon-green);
+  position: absolute;
+  bottom: 0;
+  transform: translateY(50%);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.dice:hover {
+  box-shadow: 0 0 40px 0 var(--neon-green);
+  cursor: pointer;
+}
+
+.dice-img {
+  width: 28px;
+  height: 28px;
+}
+
+@media screen and (max-width: 576px) {
+  .card {
+    max-width: 340px;
+  }
+
+  .card-title {
+    font-size: 10px;
+    padding-top: 36px;
+    letter-spacing: 3px;
+  }
+
+  .card-quote {
+    font-size: 20px;
+    margin-left: 18px;
+    margin-right: 18px;
+  }
+
+  .divider,
+  .divider-img {
+    width: 304px;
+  }
+
+  .divider {
+    height: 56px;
+  }
+
+  .dice {
+    width: 40px;
+    height: 40px;
+  }
+
+  .dice:hover {
+    box-shadow: 0 0 30px 0 var(--neon-green);
+  }
+
+  .dice-img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* Spinner */
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid var(--quote-color);
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: var(--quote-color) transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
