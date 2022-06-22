@@ -25,5 +25,5 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [github](https://github.com/evelyn-2022/random-advice-generator)
+- Live Site URL: [netlify](https://random-advice-generator-evelyn.netlify.app/)
